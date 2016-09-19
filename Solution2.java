@@ -1,8 +1,8 @@
 public class Solution2{
-	public void inRange(int a,int b){
-		if((a>=10 && a<=20)||(b>=10 && b<=20))
-			System.out.println("true");
-		else
-			System.out.println("false");
+	public String backAround(String str){
+		StringBuilder sb=new StringBuilder(str);
+		sb.insert(0,sb.charAt(sb.length()-1));
+		sb.insert(sb.length()-1,sb.charAt(sb.length()-1));
+		return sb.toString();
 	}
 }

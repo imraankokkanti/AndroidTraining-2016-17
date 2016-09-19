@@ -1,7 +1,9 @@
 public class TestSolution3{
-	public static void main(String [] args){
-		Solution3 sol = new Solution3();
-		sol.sumInt(1,30);
-		sol.sumInt(10,15);
+	public static void main(String []args){
+		Solution3 ep=new Solution3();
+		if(ep.containE("Hello"))
+			System.out.println("true");
+		else
+			System.out.println("false");
 	}
 }

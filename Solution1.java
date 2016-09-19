@@ -1,8 +1,7 @@
 public class Solution1{
-  public boolean sameLast(int a, int b){
-    if((a%10)==(b%10))
-      return true;
-    else
-      return false;
-  }
+	public String missingChar(String str,int n){
+		StringBuilder sb=new StringBuilder(str);
+		sb.deleteCharAt(n);
+		return sb.toString();
+	}
 }
